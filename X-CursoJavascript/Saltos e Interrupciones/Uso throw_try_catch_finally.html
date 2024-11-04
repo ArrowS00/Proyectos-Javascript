@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 2em;">
+
+    <script type="text/javascript">
+
+    //realizar el factorial de un número (5! = 5*4*3*2*1 = 120)
+
+    let numero = prompt("Por favor, introduce un número");
+
+    function factorial(numero) {
+        if (isNaN(numero)) {
+            throw new Error("El valor introducido no es un número");
+        }
+        if (numero < 0) {
+            throw new Error("El número no puede ser negativo");
+        }
+        let total = 1;
+        for (let i = numero; i > 1; i--) {
+            total *= i;
+            //total = total * i;
+        }
+        return total;
+    }
+
+    document.write("El factorial de "+numero+" es "+factorial(numero));
+
+    </script>
+    
+</body>
+</html>

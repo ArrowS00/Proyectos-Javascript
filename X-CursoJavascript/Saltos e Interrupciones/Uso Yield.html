@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 2em;">
+
+    <script type="text/javascript">
+
+    function* generador(desde, hasta) {
+        for (let i = desde; i <= hasta; i++) {
+
+            yield i;
+       
+        }    
+    }
+
+    let gen = generador(5, 15);
+
+    document.write(gen.next().value+"</br>");
+    document.write(gen.next().value+"</br>");
+    document.write(gen.next().value+"</br>");
+    document.write(gen.next().value+"</br>");
+
+    
+
+    </script>
+    
+</body>
+</html>

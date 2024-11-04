@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR-OFF-2</title>
+</head>
+<body style="font-size: 2em;">
+
+    <script text="text/javascript">
+
+        let datos = [[1,7,9],[5,6,8],[2,5,9]];
+
+        //document.write(datos[1][2]);
+
+       /* for (let i=0;i<3;i++) {
+
+                        
+            for (let j=0;j<3;j++) 
+       
+                    document.write(datos[i][j]+"</br>");
+
+        }
+        */
+        
+
+        /*for(dim1 of datos){
+
+            for(dim2 of dim1){
+
+                document.write(dim2 +"</br>");
+            }
+
+        }
+        */
+
+        let email="arrows09@gmail.com";
+        let arroba=0;
+
+        for(letra of email){
+
+            if(letra == "@") arroba++;       
+            
+        }
+        
+        if(arroba==1) {document.write("Email correcto");
+    
+        }else{
+            document.write("Email incorrecto");  }
+
+        
+       
+        
+
+    </script>
+    
+</body>
+</html>

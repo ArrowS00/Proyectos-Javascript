@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break</title>
+</head>
+<body style="font-size: 2em;">
+
+    <script type="text/javascript">
+
+        let mail = prompt("Introduce en email, por favor: ");
+
+        let arroba = false;
+
+        for (let i=0; i<mail.length;i++){
+
+            document.write("Evaluando carácter " +i+ " del email.</br>");
+
+            if (mail[i]=="@"){
+
+                arroba = true;
+
+                document.write("ARROBA ENCONTRADA.</br>");
+
+                break;
+
+            }
+
+        }
+
+        if (arroba==true){
+
+            document.write("Mail correcto");
+
+        }else{
+
+            document.write("Mail incorrecto");
+
+        }
+
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso for-in</title>
+</head>
+<body style="font-size: 2em;">
+
+    <script text="text/javascript">
+
+        //let coche={color:"rojo", peso:1200, potencia:250, cilindrada:2000};
+
+            //let keys="";
+
+            //for(let propiedad in Object.keys(coche)){
+
+            // keys+=propiedad;
+            // keys+="</br>";
+
+            // }
+
+            // document.write(keys);
+        
+
+        /*let coche={color:"rojo", peso:1200, potencia:250, cilindrada:2000};
+
+        let claveValor="";
+
+        for(let [k,v] of Object.entries(coche)){
+
+            claveValor+=k+": "+v;
+
+            claveValor+="</br>";
+
+        }
+
+        document.write(claveValor);*/
+
+        /*let coche={color:"rojo", peso:1200, potencia:250, cilindrada:2000};
+
+        let claveValor="";
+
+        for(let propiedad in coche){
+
+            document.write(propiedad+"</br>")
+
+
+        }
+
+        document.write(claveValor);*/
+
+        let coche={color:"rojo", peso:1200, potencia:250, cilindrada:2000};
+
+        let claveValor="";
+
+        for(let propiedad in coche){
+
+            document.write(propiedad+": "+coche[propiedad]+"</br>")
+
+
+        }
+        document.write(claveValor);
+
+
+        
+
+
+        
+
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

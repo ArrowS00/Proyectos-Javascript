@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 2rem;">
+    <script type="text/javascript">
+
+        document.write("Hola Mundo 1<br>");
+
+        document.write("Hola Mundo 2<br>");
+
+        /*function calculo(operador1,operador2){
+
+            let resultado= operador1 + operador2;
+
+            return resultado;
+
+        }
+        document.write("El resultado es: " + calculo(3,5));*/
+
+        function calculo(operador1,operador2){
+
+           if(isNaN(operador1) || isNaN(operador2)){
+
+                return "Imposible calcular uno de los valores no es numérico"
+
+           }
+           else{
+                
+                    
+    
+                    return operador1 + operador2;
+           }
+
+        }
+
+        document.write("El resultado es:" + calculo(3,"asdsadfsa"));
+
+        </script>
+    
+</body>
+</html>

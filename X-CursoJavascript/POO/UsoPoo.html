@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 2em;">
+
+    <script type="text/javascript">
+        //Objeto literal
+        let p1={nombre:"Juan", edad:18};
+
+        let coche = {color:"rojo", potencia:400, propietario:p1};
+
+        coche["pasajeros"]=5;
+        
+        
+        //console.log(coche);
+
+        for(let i=0; i<5; i++){
+            coche[`cilindrada${i}`]=2000+(i*100)+" cc";
+        }
+
+        //let borrado_exito= delete coche.propietario;
+        //document.write(coche.hasOwnProperty("propietario"));
+
+
+        //recorrer klas propiedades
+        for (let p in coche){
+            document.write(p+" : "+coche[p]+"<br>");
+        }
+
+       //document.write(coche.propietario.nombre);
+        //console.log(coche);
+
+
+
+
+        /*let mi_Array= new Object();
+        console.log(mi_Array);*/
+
+        /*let coche=Object.create({color:"rojo", potencia:400});
+        console.log(coche);*/
+
+    </script>
+    
+</body>
+</html>

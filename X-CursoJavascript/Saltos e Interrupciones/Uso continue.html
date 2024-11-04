@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continue</title>
+</head>
+<body style="font-size: 2em;">
+    <script type="text/javascript">
+
+        let salarios=[];
+
+        let num_trabajador=0;
+
+        while(num_trabajador<5){
+
+            let salario=prompt("Introduce el salario del trabajador "+ (num_trabajador+1));
+
+            
+
+            if(!salario) continue;
+
+            //if(salario<1000) continue; salta lo siguiente y pasa 
+
+            //sacamos el salario con la reduccion del 25%
+            salarios[num_trabajador]=salario-(salario*0.25);
+
+            num_trabajador+=1;
+
+        }
+
+        for(salario of salarios){
+
+            document.write(salario+"</br>");
+
+        }
+
+
+    </script>
+    
+</body>
+</html>

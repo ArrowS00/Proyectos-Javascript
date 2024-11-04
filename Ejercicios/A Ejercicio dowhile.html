@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 2em;">
+
+    <script type="text/javascript">
+        
+        
+        let numero=prompt("Introduce un número entre el 1 y 100, por favor");
+        let aleatorio=parseInt(Math.random()*100);
+        let intentos=0;
+
+        while(numero!=aleatorio){
+            intentos++;
+            if(numero<aleatorio) alert("El número es mayor");
+            if(numero>aleatorio) alert("El número es menor");
+            numero=prompt("Introduce un número, por favor");
+
+        }
+
+        document.write(`Correcto!. Lo has adivinado en  ${intentos} intentos.`);
+
+
+
+        
+
+        
+    
+    
+    </script>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <title>Área triángulo</title>
+ <LINK REL="stylesheet" TYPE="text/css" HREF="estilo.css">
+ 
+</head>
+<body>
+ <h3>Área de un triángulo rectángulo</h3>
+
+ <input type="number" id="base" placeholder="Base">
+ <input type="number" id="altura" placeholder="Altura">
+ <button id="button" onclick="obtenerArea()">Calcular área</button>
+ <br><br>
+ <label>Área: </label>
+ <div id="areaResultado">
+ </div>
+ <script>
+  function obtenerArea(){
+   var areaResultado = document.getElementById("areaResultado");
+   var b = parseInt(document.getElementById("base").value);
+   var h = parseInt(document.getElementById("altura").value);
+
+   var area = (b * h) / 2;
+
+   areaResultado.innerHTML = "" + area;
+  }
+ </script>
+
+</body>
+</html>

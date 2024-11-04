@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break II</title>
+</head>
+<body style="font-size: 2em;">
+    <script type="text/javascript">
+
+        let naciones=[];
+
+        let num = 0;
+
+        do {
+
+            num+=1;
+
+            naciones[num]=prompt("Introduce una nación \nPulsa cancelar para salir");
+
+        }while(naciones[num]!=null);
+
+        //document.write(naciones);
+
+        for(let i=0; i<naciones.length; i++){
+
+            if(naciones[i]=="España" || naciones[i]=="españa" || naciones[i]=="ESPAÑA"){
+
+                document.write("España encontrada.");
+
+                break;
+                
+            }
+
+        }
+
+        /*Codigo optimizado que realiza lo mismo
+
+        let naciones=[];
+
+        let i = 0;
+
+        while(true) {
+
+            naciones[num]=prompt("Introduce una nación \nPulsa cancelar para salir");
+
+            if(naciones[i]=="España" || naciones[i]=="españa" || naciones[i]=="ESPAÑA"){
+
+                document.write("España encontrada.");
+
+                break;
+
+
+        }
+
+        i+=1;
+               
+        */
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

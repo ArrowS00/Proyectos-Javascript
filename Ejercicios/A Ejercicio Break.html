@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: 2em;">
+
+    <script type="text/javascript">
+
+
+    let num1 = parseInt(prompt("Por favor, introduce un número"));
+    let num2 = parseInt(prompt("Por favor, introduce otro número"));
+    let contador=0;
+
+    for (let i = num1; i < num2; i++) {
+        
+        let primo = true;
+
+        for(let j=2; j<i; j++){
+
+            if(i%j==0){
+
+                primo=false;
+
+                break;
+            }
+        }
+
+        if(primo){
+
+            document.write(i+"<br>");
+            contador++;
+
+            if(contador==3) break;
+            
+        }
+
+    }
+
+    
+
+
+    
+
+    </script>
+    
+</body>
+</html>

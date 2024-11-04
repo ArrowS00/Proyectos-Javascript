@@ -1,0 +1,23 @@
+
+#areaResultado{
+   width: 50pt;
+   height: 14pt;
+   margin-top: 5px;
+   background-color: rgb(0, 255, 42);
+   color: rgb(0, 0, 0);
+}
+#base{
+    background-color: rgb(0, 255, 42) ;
+}
+#altura{
+    background-color: rgb(0, 255, 42)
+}
+h3{
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant: small-caps;
+}
+#button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant: small-caps;
+}
